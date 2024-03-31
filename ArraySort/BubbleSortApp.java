@@ -20,14 +20,15 @@ public class BubbleSortApp {
             arr[i] = scanner.nextInt();
         }
 
+        System.out.println("Data sebelum diurutkan:");
+        System.out.println(java.util.Arrays.toString(arr));
+
         scanner.close();
 
         // Panggil method sort
         BubbleSort.sort(arr);
 
         // Tampilkan data setelah diurutkan
-        System.out.println("Data sebelum diurutkan:");
-        System.out.println(java.util.Arrays.toString(arr));
         System.out.println("Data setelah diurutkan:");
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");
